@@ -1,0 +1,23 @@
+name: APK Generator
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - uses: subosito/flutter-action@v2
+        with:
+          flutter-version: '3.10.4'
+      - run: flutter pub get
+      - run: flutter build apk --release
+      - name: Upload APK
+        uses: actions/upload-artifact@v2
+        with:
+          name: fanygis.apk
+          path: build/app/outputs/flutter-apk/app-release.apk
