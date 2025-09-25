@@ -3,7 +3,7 @@ name: Build APK
 on:
   push:
     branches:
-      - principal  # ← tu rama actual
+      - main  # ← tu rama actual
 
 jobs:
   build:
