@@ -20,8 +20,6 @@ jobs:
         with:
           name: fanygisa-apk
           path: build/app/outputs/flutter-apk/app-release.apk
-          
-Activar workflow para compilar APK
-# Activar workflow para compilar APK
-Forzar activación del workflow
+              
+
 
