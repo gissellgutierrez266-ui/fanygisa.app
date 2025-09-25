@@ -1,9 +1,9 @@
-name: APK Generator
+name: Build APK
 
 on:
   push:
     branches:
-      - main
+      - principal  # ← tu rama actual
 
 jobs:
   build:
